@@ -12,34 +12,41 @@
     font-family: 'Montserrat';
 }
 
-header{
+/* header{
     display: grid;
     height: max-content;
     width: 100%;
     background-color:white;
-}
+} */
 
 .imageTitle {
     width: 100%;
     height: max-content;
 
 }
-.headerLogoTitle{
-    padding: 2em 0em;
-
-}
 
 .headerTitle{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     font-size: 2em;
     color: black;
     padding-bottom: 2em;
 }
+
+.headerLogoTitle{
+    max-width: 5%;
+    padding: 2em 0em;
+    grid-area: logo;
+
+}
+
 .imageTitle{
     width: 100%;
     position: absolute;
 }
 .blockTextHeader{
+    grid-area: text;
     background-color: yellow;
     max-width: 80%;
     text-align: center;
@@ -61,26 +68,33 @@ body {
 } */
 
 .firstSnippet{
+    display: grid;
     background-color: pink;
+    grid-template-areas: 
+        "title title title"
+        "monitor textgroup .";
+        column-gap: 5%;
 }
-
 .firstSnippetBlockTextMain{
-    max-width: 70%;
+    grid-area: title;
     text-align: center;
     padding: 3%;
 }
 
 
 .firstSnippetMonitor{
-    max-width: 45%;
+    grid-area: monitor;
+
 
 }
 
 .firstSnippetBlockText{
-    max-width: 30%;
+    grid-area: textgroup;
+
     text-align: start;
     background-color: yellow;
     padding: 3%;
+    max-width: 80%;
 
 }
 
