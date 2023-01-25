@@ -1,5 +1,10 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+:root{
+    --colorTitle: #36393F;
+    --colorParagraph: #696969;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,22 +13,81 @@
 }
 
 header{
+    display: grid;
+    height: max-content;
+    width: 100%;
+    background-color:white;
+}
+
+.imageTitle {
+    width: 100%;
+    height: max-content;
+
+}
+.headerLogoTitle{
+    padding: 2em 0em;
 
 }
 
 .headerTitle{
+    background-color: red;
     font-size: 2em;
-    color: white;
+    color: black;
+    padding-bottom: 2em;
+}
+.imageTitle{
+    width: 100%;
+    position: absolute;
+}
+.blockTextHeader{
+    background-color: yellow;
+    max-width: 80%;
+    text-align: center;
+}
+
+.bodyTextTitleSetting{
+    font-size: larger;
+    color: var(--colorTitle);
+    padding-bottom: 10px ;
+}
+.bodyTextParagraphSetting{
+    color: var(--colorParagraph);
+    font-size: medium;
+
+}
+/* 
+body {
+
+} */
+
+.firstSnippet{
+    background-color: pink;
+}
+
+.firstSnippetBlockTextMain{
+    max-width: 70%;
+    text-align: center;
+    padding: 3%;
+}
+
+
+.firstSnippetMonitor{
+    max-width: 45%;
 
 }
 
-.headerSub{
-    color: blue;
-    font-size: large;
+.firstSnippetBlockText{
+    max-width: 30%;
+    text-align: start;
+    background-color: yellow;
+    padding: 3%;
+
 }
 
-body{
+
+
+footer{
+    background-color: PINK;
     height: 400px;
-   width: 100%;
-    background-image: url("./image/bg-header-desktop.png");
+    width: 100%;
 }
