@@ -9,99 +9,199 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     font-family: 'Montserrat';
 }
 
-/* header{
-    display: grid;
-    height: max-content;
-    width: 100%;
-    background-color:white;
-} */
-
-.imageTitle {
-    width: 100%;
-    height: max-content;
-
+a {
+    text-decoration: none;
+    color: inherit
 }
 
-.headerTitle{
+.btnDownloadIOS{
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.1rem;
+    background: #1E90FF;
+    color: white;
+    border-radius: 40px;
+    border-style: outset;
+    transition: background 500ms ease;
+}
+
+.btnDownloadMAC{
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.1rem;
+    background: #0000CD;
+    color: white;
+    border-radius: 40px;
+    border-style: outset;
+    transition: background 500ms ease
+}
+
+.btnDownloadIOS:hover{
+    cursor: pointer;
+    background: #36393F;
+}
+
+.btnDownloadMAC:hover{
+    cursor: pointer;
+    background: #36393F;
+}
+
+.headLine{
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    color: #36393F;
+    font-size: 3rem;
+}
+
+#navbar{
+    width: 100%;
+    background: #36393F;
+    color: white;
+    height: 80px;
+    position: fixed;    
+}
+
+#navbar-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 2em;
-    color: black;
-    padding-bottom: 2em;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.headerLogoTitle{
-    max-width: 5%;
-    padding: 2em 0em;
-    grid-area: logo;
-
+.logo{
+    font-size: 2rem;
 }
 
-.imageTitle{
-    width: 100%;
-    position: absolute;
+#navbar-items{
+    display: flex;
+    list-style: none;
 }
-.blockTextHeader{
-    grid-area: text;
-    background-color: yellow;
-    max-width: 80%;
+
+#navbar-items li{
+    padding: 10px;
+}
+
+#home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #36393F;
+    background: url('/image/bg-header-desktop.png') no-repeat center center/cover;
+    background-blend-mode: color;
+}
+
+#home-container{
     text-align: center;
 }
 
-.bodyTextTitleSetting{
-    font-size: larger;
-    color: var(--colorTitle);
-    padding-bottom: 10px ;
+#home-container h2{
+    font-weight: bolder;
+    text-align: center;
+    color: #36393F;
+    font-size: 3rem;
+    padding-bottom: 10px;
 }
-.bodyTextParagraphSetting{
-    color: var(--colorParagraph);
-    font-size: medium;
 
+#home-container p{
+    font-weight: bolt;
+    font-size: 1.2rem;
+    padding: 7px 0;
 }
-/* 
-body {
 
-} */
-
-.firstSnippet{
+#about{
+    width: 100%;
+    padding-bottom: 50px;
+    justify-items: center;
     display: grid;
-    background-color: pink;
     grid-template-areas: 
-        "title title title"
-        "monitor textgroup .";
-        column-gap: 5%;
-}
-.firstSnippetBlockTextMain{
-    grid-area: title;
-    text-align: center;
-    padding: 3%;
+        "titlegroup titlegroup"
+        "imgmonitor textgroup";
+        gap: 50px;
 }
 
-
-.firstSnippetMonitor{
-    grid-area: monitor;
-
-
+.aboutContainer{
+    justify-content: center;
+    grid-area: titlegroup;
+    max-width: 70%;
 }
 
-.firstSnippetBlockText{
-    grid-area: textgroup;
+    #about-title{
+        font-weight: bolder;
+        text-align: center;
+        color: #36393F;
+        font-size: 3rem;
+    }
 
-    text-align: start;
-    background-color: yellow;
-    padding: 3%;
+    #about-text-center{
+        color: #696969;
+        text-align: center;
+    }
+
+#about-img-monitor{
     max-width: 80%;
-
+    grid-area: imgmonitor;
 }
 
-
-
-footer{
-    background-color: PINK;
-    height: 400px;
-    width: 100%;
+#container-about-text-left{
+    grid-area: textgroup;
 }
+
+    .groupText{
+        max-width: 50%;
+        padding: 20px;
+    }
+
+    .titleH3{
+        font-weight: bolder;
+        color: #36393F;
+        font-size: 1.5rem;
+    }
+
+    .textSimples{
+        color: #696969;
+
+    }
+
+#platform{
+    background:pink;
+
+}
+    #platform-container-title{
+        background: yellow;
+    }
+
+    #platform-container-title p{
+        text-align: center;
+    }
+
+    #img-devices{
+        max-width: 50%;
+    }
+
+.containerTextCenter p{
+    text-align: center;
+}
+
+#description-container{
+    background: yellow;
+}
+
+.descriptionBoost{
+    background: red;
+    max-width: 500px;
+}
+    #description-boost-blacklist{
+        background: #0000CD;
+    }
+
+    #
