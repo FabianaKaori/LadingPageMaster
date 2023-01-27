@@ -1,205 +1,334 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-:root{
-    --colorTitle: #36393F;
-    --colorParagraph: #696969;
-}
+  :root {
+      --colorTitle: #36393F;
+      --colorParagraph: #696969;
+  }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
 
-body{
-    font-family: 'Montserrat';
-}
+  body {
+      font-family: 'Montserrat';
 
-a {
-    text-decoration: none;
-    color: inherit
-}
+  }
 
-.btnDownloadIOS{
-    display: inline-block;
-    padding: 15px;
-    font-size: 1.1rem;
-    background: #1E90FF;
-    color: white;
-    border-radius: 40px;
-    border-style: outset;
-    transition: background 500ms ease;
-}
+  a {
+      text-decoration: none;
+      color: inherit
+  }
 
-.btnDownloadMAC{
-    display: inline-block;
-    padding: 15px;
-    font-size: 1.1rem;
-    background: #0000CD;
-    color: white;
-    border-radius: 40px;
-    border-style: outset;
-    transition: background 500ms ease
-}
+  .btnDownloadIOS {
+      display: inline-block;
+      padding: 15px;
+      font-size: 1.1rem;
+      background: #1E90FF;
+      color: white;
+      border-radius: 40px;
+      border-style: outset;
+      transition: background 500ms ease;
+  }
 
-.btnDownloadIOS:hover{
-    cursor: pointer;
-    background: #36393F;
-}
+  .btnDownloadMAC {
+      display: inline-block;
+      padding: 15px;
+      font-size: 1.1rem;
+      background: #0000CD;
+      color: white;
+      border-radius: 40px;
+      border-style: outset;
+      transition: background 500ms ease
+  }
 
-.btnDownloadMAC:hover{
-    cursor: pointer;
-    background: #36393F;
-}
+  .btnDownloadIOS:hover {
+      cursor: pointer;
+      background: #36393F;
+  }
 
-.headLine{
-    text-align: center;
-    padding-bottom: 20px;
-    font-weight: bolder;
-    color: #36393F;
-    font-size: 3rem;
-}
+  .btnDownloadMAC:hover {
+      cursor: pointer;
+      background: #36393F;
+  }
 
-#navbar{
-    width: 100%;
-    background: #36393F;
-    color: white;
-    height: 80px;
-    position: fixed;    
-}
+  .headLine {
+      text-align: center;
+      padding-bottom: 20px;
+      font-weight: bolder;
+      color: #36393F;
+      font-size: 3rem;
+  }
 
-#navbar-container{
-    width: 80%;
-    height: 100%;
-    margin: auto;
+  #navbar {
+      width: 100%;
+      background: #36393F;
+      color: white;
+      height: 80px;
+      position: fixed;
+  }
+
+  #navbar-container {
+      width: 80%;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .logo {
+      font-size: 2rem;
+  }
+
+  #navbar-items {
+      display: flex;
+      list-style: none;
+  }
+
+  #navbar-items li {
+      padding: 10px;
+  }
+
+  #home {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #36393F;
+      background: url('/image/bg-header-desktop.png') no-repeat center center/cover;
+      background-blend-mode: color;
+  }
+
+  #home-container {
+      text-align: center;
+  }
+
+  #home-container h2 {
+      font-weight: bolder;
+      text-align: center;
+      color: #36393F;
+      font-size: 3rem;
+      padding-bottom: 10px;
+  }
+
+  #home-container p {
+      font-weight: bolt;
+      font-size: 1.2rem;
+      padding: 7px 0;
+  }
+
+  #about {
+
+      height: 100vh;
+      width: 100%;
+      padding-top: 100px;
+      justify-items: center;
+      display: grid;
+      grid-template-areas:
+          "titlegroup titlegroup"
+          "imgmonitor textgroup";
+      gap: 50px;
+  }
+
+  .aboutContainer {
+      justify-content: center;
+      grid-area: titlegroup;
+      max-width: 70%;
+  }
+
+  #about-title {
+      font-weight: bolder;
+      text-align: center;
+      color: #36393F;
+      font-size: 3rem;
+  }
+
+  #about-text-center {
+      color: #696969;
+      text-align: center;
+  }
+
+  #about-img-monitor {
+      max-width: 80%;
+      grid-area: imgmonitor;
+  }
+
+  #container-about-text-left {
+      grid-area: textgroup;
+  }
+
+  .groupText {
+      max-width: 50%;
+      padding: 20px;
+  }
+
+  .titleH3 {
+      font-weight: bolder;
+      color: #36393F;
+      font-size: 1.5rem;
+  }
+
+  .textSimples {
+      color: #696969;
+
+  }
+
+  #platform {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-}
+      padding-top: 100px;
+      width: 100%;
 
-.logo{
-    font-size: 2rem;
-}
+  }
 
-#navbar-items{
-    display: flex;
-    list-style: none;
-}
+  #platform-container-title {
+      grid-area: title;
+  }
 
-#navbar-items li{
-    padding: 10px;
-}
+  #platform-container-title p {
+      text-align: center;
+  }
 
-#home{
+  #img-devices {
+      max-width: 50%;
+  }
+
+  .containerTextCenter p {
+      text-align: center;
+  }
+
+  #description-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 15px;
+  }
+
+  .descriptionBoost {
+      max-width: 500px;
+  }
+
+  #description-boost-blacklist {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #description-boost-blacklist img {
+      max-width: 35px;
+      margin: 30px;
+
+  }
+
+
+  #description-boost-blacklist p {
+      margin: 5px;
+      color: #696969;
+      text-align: center;
+      padding-bottom: 50px;
+
+  }
+
+  #description-boost-blacklist span {
+      margin: 5px;
+      font-size: 1.2rem;
+      color: #36393F;
+      font-weight: bolder;
+
+
+  }
+
+  #description-boost-icontext {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #description-boost-icontext img {
+      max-width: 50px;
+      margin: 30px;
+
+  }
+
+
+  #description-boost-icontext p {
+      margin: 5px;
+      color: #696969;
+      text-align: center;
+      padding-bottom: 50px;
+  }
+
+  #description-boost-icontext span {
+      margin: 5px;
+      font-size: 1.2rem;
+      color: #36393F;
+      font-weight: bolder;
+  }
+
+  #description-boost-preview {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+
+  #description-boost-preview img {
+      max-width: 50px;
+      margin: 30px;
+
+  }
+
+  #description-boost-preview p {
+      margin: 5px;
+      color: #696969;
+      text-align: center;
+      padding-bottom: 50px;
+  }
+
+  #description-boost-preview span {
+      margin: 5px;
+      font-size: 1.2rem;
+      color: #36393F;
+      font-weight: bolder;
+  }
+
+
+  #clients {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+  }
+
+  #clients-container img {
+      height: 50px;
+      margin: 50px;
+  }
+
+  #download{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #36393F;
-    background: url('/image/bg-header-desktop.png') no-repeat center center/cover;
-    background-blend-mode: color;
-}
-
-#home-container{
     text-align: center;
-}
+  }
 
-#home-container h2{
-    font-weight: bolder;
-    text-align: center;
-    color: #36393F;
-    font-size: 3rem;
+  #download-container h2{
     padding-bottom: 10px;
-}
+  }
 
-#home-container p{
-    font-weight: bolt;
-    font-size: 1.2rem;
-    padding: 7px 0;
-}
-
-#about{
-    width: 100%;
+  #download-container p{
     padding-bottom: 50px;
-    justify-items: center;
-    display: grid;
-    grid-template-areas: 
-        "titlegroup titlegroup"
-        "imgmonitor textgroup";
-        gap: 50px;
-}
+  }
 
-.aboutContainer{
-    justify-content: center;
-    grid-area: titlegroup;
-    max-width: 70%;
-}
-
-    #about-title{
-        font-weight: bolder;
-        text-align: center;
-        color: #36393F;
-        font-size: 3rem;
-    }
-
-    #about-text-center{
-        color: #696969;
-        text-align: center;
-    }
-
-#about-img-monitor{
-    max-width: 80%;
-    grid-area: imgmonitor;
-}
-
-#container-about-text-left{
-    grid-area: textgroup;
-}
-
-    .groupText{
-        max-width: 50%;
-        padding: 20px;
-    }
-
-    .titleH3{
-        font-weight: bolder;
-        color: #36393F;
-        font-size: 1.5rem;
-    }
-
-    .textSimples{
-        color: #696969;
-
-    }
-
-#platform{
-    background:pink;
-
-}
-    #platform-container-title{
-        background: yellow;
-    }
-
-    #platform-container-title p{
-        text-align: center;
-    }
-
-    #img-devices{
-        max-width: 50%;
-    }
-
-.containerTextCenter p{
-    text-align: center;
-}
-
-#description-container{
-    background: yellow;
-}
-
-.descriptionBoost{
-    background: red;
-    max-width: 500px;
-}
-    #description-boost-blacklist{
-        background: #0000CD;
-    }
+  footer{
+    background: #0000CD;
+  }
